@@ -1,0 +1,1014 @@
+@charset "utf-8";
+
+/* ===================================== */
+/* =========== GLOBALS =========== */
+/* ===================================== */
+
+body{
+    background: url(../images/bgPattern.png) repeat;
+    color: #555;
+    font: 300 15px 'Ubuntu', sans-serif;
+    
+    overflow-x: hidden;
+}
+
+label {
+    display: inline-block;
+    margin: 0 0 10px 0;
+    color: #B7AC8B;
+    font-size: 18px;
+}
+
+input:focus,
+select:focus,
+button:focus,
+textarea:focus,
+area:focus {
+    outline: none;
+}
+
+select,
+input {
+    display: inline-block;
+    box-sizing: border-box;
+    height: 30px;
+    padding: 0 0 0 10px;
+    border: 1px solid #BBB;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+a, 
+.buttonOne,
+.buttonPurple,
+.circle
+{
+     transition: all 0.4s ease;
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+}
+
+/* ===================================== */
+/* =========== PAGE STRUCTURE ========== */
+/* ===================================== */
+
+/* clears */
+.clearBoth {
+    clear: both;
+}
+
+.selfClear:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/* wrappers and container */
+#miniNavContainer,
+#mainNavContainer,
+#galleryContainer,
+#quickBookContainer,
+#mainBodyContainer,
+#newsletterContainer
+#footerContainer,
+#worldMapContainer {
+    position: relative;
+    width: 100%;
+    min-width: 1200px;
+}
+
+.containerCenter {
+	width:1200px;
+	margin:0 auto;
+}
+
+.containerWrapper {
+    padding: 0 50px;
+}
+
+.twoColumnGrid {
+    width: 530px;
+    margin: 0 40px 30px 0;
+}
+
+/* handy positioning classes */
+.floatLeft {
+	float: left;
+}
+
+.floatRight {
+	float: right;
+}
+
+/* mini nav section */
+#miniNavContainer{
+    padding: 5px 0;
+}
+
+/* main nav section */
+#mainNavContainer {
+    padding: 10px 0;
+}
+
+/* gallery section */
+
+.slideContent {
+    position:absolute;
+    width: 450px;
+    top: 15%;
+    left: 35%;
+    text-align: center;
+}
+
+.slideContent p {
+    font-size: 18px;
+}
+
+.hero {
+   position: relative;
+   width: 100%;
+   height: 450px;
+   overflow: auto;
+}
+
+.hero ul {
+    margin: 0;
+    padding: 0;
+}
+
+.hero ul li {
+    float: left;
+    min-height: 450px;
+}
+
+.hero li {
+    display: inline-block;
+    text-align: center;
+    list-style: none;
+}
+
+.hero li:nth-child(1){
+    background-image: url(../images/slide1Bg.jpg);
+    background-repeat: no-repeat;
+}
+
+.hero li:nth-child(2){
+    background-image: url(../images/slide2Bg.jpg);
+    background-repeat: no-repeat;
+}
+
+.hero li:nth-child(3){
+    background-image: url(../images/slide3Bg.jpg);
+    background-repeat: no-repeat;
+}
+
+.hero2>img {
+    width: 100%;
+    height: auto;
+}
+
+/* gold strip section */
+
+#goldStrip {
+    height: 50px;
+    margin: -3px 0 0 0;
+}
+
+/* quick book section */
+
+#quickBookBox {
+    box-sizing: border-box;
+    position: absolute;
+    top: -115px;
+    width: 975px;
+    padding: 30px;
+    margin: 0 50px;
+    z-index: 0;
+}
+
+.quickBookGrid {
+    width: 137px;
+    margin: 0 15px 10px 0;
+}
+
+#quickReserve .quickBookGrid:nth-child(6){
+    width: 155px;
+    margin-right: 0;
+}
+
+.quickBookText {
+    width: 168px;
+    margin: 0 15px 10px 0;
+}
+
+/* main body section */
+
+.mainBodyGrid {
+    width: 340px;
+    margin: 120px 40px 30px 0;
+}
+
+.lessMargin {
+    margin-top: 30px;
+}
+
+.bodyGridMask {
+    position: relative;
+    bottom: 223px;
+    padding: 5px 30px;
+    background: rgba(0,0,0,0.7);
+}
+
+.bodyGridMask2 {
+    position: relative;
+    bottom: 103px;
+    padding: 1px 30px;
+    background: rgba(0,0,0,0.5);
+}
+
+
+.captionPosition {
+    position: relative;
+    bottom: 65px;
+    padding: 3px;
+}
+
+/* newsletter section */
+
+#newsletterContainer{
+    padding: 20px 0;
+}
+
+/* facilities info page */
+
+.additionalInfoWrap {
+    position: relative;
+    bottom: 120px;
+}
+
+.featuresTextBox {
+    box-sizing: border-box;
+    padding: 5px 20px;
+    margin-top: 50px;
+    background: rgba(183,172,139,0.7);
+    font-size: 13px;
+    line-height: 18px;
+}
+
+/* reservations page */
+
+.mainFormsGrid {
+    box-sizing: border-box;
+    width: 720px;
+    margin: 30px 40px 0 0;
+}
+
+.sideBodyGrid {
+    width: 340px;
+    margin: 30px 0 0 0;
+}
+
+.sideContent {
+    margin-top: -60px;
+}
+
+.mainBodyHalf {
+    width: 165px;
+}
+
+.mainBodyThird {
+    width: 105px;
+    margin-right: 12.5px;
+}
+
+.checkBoxText {
+    position: relative;
+    bottom: 8px;
+}
+
+
+/* footer section */
+
+#footerContainer {
+    padding: 40px 0 30px 0;
+}
+
+/* world map section - contact us */
+
+#worldMapContainer {
+    padding: 20px 0;
+}
+
+.mapWrapper {
+    width: 850px;
+    height: 500px;
+}
+
+.posSA {
+    position: relative;
+    bottom: 258px;
+    left: 0;
+}
+
+.posOC {
+    position: relative;
+    bottom: 258px;
+    left: 162px;
+}
+
+/* ===================================== */
+/* =========== HEADINGS ========== */
+/* ===================================== */
+
+h1,
+h2,
+h3,
+h4,
+.headingFont, 
+label,
+button,
+.textPrice {
+    font-family: 'Marcellus', serif;
+}
+
+h1 {
+    font-size: 35px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+h4, 
+labelTitle {
+    font-size: 18px;
+}
+
+
+.textCaps {
+    text-transform: uppercase;
+}
+
+.mainTitleMargin {
+    margin-top: 130px;
+}
+
+
+/* ===================================== */
+/* =========== TEXT STYLES ========== */
+/* ===================================== */
+
+/* handy text classes */
+
+.alignCenter {
+	text-align: center;
+}
+
+.alignLeft {
+	text-align: left;
+}
+
+.alignRight {
+	text-align: right;
+}
+
+.noUnderline {
+    text-decoration: none;
+}
+
+.captionText {
+    font-size: 12px;
+}
+
+.lineHeightBig {
+    line-height: 25px;
+}
+
+/* colour text classes */
+
+.textGold {
+    color: #B7AC8B;
+}
+
+.textWhite {
+    color: #FFF;
+}
+
+.textDarkV {
+    color: #464D6A;
+}
+
+.textShadow {
+    text-shadow: 1px 1px 0.5px #000;
+}
+
+.textBold {
+    font-weight: 400;
+}
+
+.textExtraBold {
+    font-weight: 500;
+}
+
+.textPrice {
+    font-size: 15px;
+}
+
+.listStyleNone {
+    list-style-type: none;
+}
+
+/* mini navigation section */
+
+#miniNavContainer span {
+    display: inline-block;
+    padding: 9px 0;
+    color: #FFF;
+    font-size: 12px;
+}
+
+#miniNavContainer a {
+    color: #FFF;
+}
+
+#mainFooter {
+    font-size: 13px;
+
+}
+
+/* hero gallery section */
+
+.hero li h1,
+.hero li h2 {
+    padding: 40px 0 20px 0;
+    font-size: 40px;
+}
+
+.heroParagraph {
+    margin-bottom: 50px;
+    font-size: 18px;
+}
+
+/* main body section */
+
+.bodyGridMask h3 {
+    margin-bottom: 5px;
+}
+.bodyGridMask p {
+    margin-top: 2px;
+    font-size: 14px;
+}
+
+/* footer section */
+
+.finePrint {
+    font-size: 11px;
+}
+
+
+/* ===================================== */
+/* =========== NAVIGATION ========== */
+/* ===================================== */
+
+/* main navigation section */
+
+#mainNavMenu {
+    padding: 17px 0 0 0;
+    margin: 16px 0 0 348px;
+    color: #B7AC8B;
+}
+
+#mainNavMenu li {
+    float: left;
+    margin: 8px 0 0 20px;
+    list-style-type: none;
+}
+
+#mainNavMenu li:nth-child(5) {
+    padding: 8px 15px;
+    border-radius: 3px;
+    margin-top: 0;
+}
+
+#mainNavMenu li a {
+    color: #B7AC8B;
+}
+
+#mainNavMenu li:nth-child(5) a,
+.buttonOne {
+    color: #FFF;
+}
+
+#mainNavMenu li a:hover {
+    color: #464D6A;
+}
+
+#mainFooter li a:hover {
+    color: #FFF;
+    text-shadow: 2px 2px 1px #333;
+}
+
+/* footer navigation */
+
+#mainFooter li {
+    list-style-type: none;
+    padding: 5px 0;
+}
+
+#mainFooter li a {
+    color: #FFF;
+}
+
+.socialPos {
+    position: relative;
+    top: 8px;
+}
+
+.fbPos {
+    top: 7px;
+    left: 11px;
+}
+
+.twitterPos {
+    top: 6px;
+    left: 5px;
+}
+
+.gPos {
+    top: 6px;
+    left: 7px;
+}
+
+.menuItems a:hover {
+    color: #B7AC8B;
+}
+/* ===================================== */
+/* ======= DESIGN and AESTHETICS ======= */
+/* ===================================== */
+
+.displayInlineBlock {
+    display: inline-block;
+}
+
+.darkVBg {
+	background: #464D6A;
+}
+
+.goldBg {
+	background: #B7AC8B;
+}
+
+.silverBg {
+	background: #EEE;
+}
+
+.whiteBg {
+    background: #FFF;
+}
+
+.lightVBg {
+    background: #DBE2FF;
+}
+
+.boxShadow {
+	box-shadow: 2px 2px 6px #BBB;
+	-webkit-box-shadow: 2px 2px 6px #BBB;
+	-moz-box-shadow: 2px 2px 6px #BBB;
+}
+
+.overFlowHide {
+    overflow: hidden;
+}
+
+.noBorder {
+    border: 0;
+}
+
+.centerPosition {
+    margin: 0 auto;
+}
+
+.circle {
+    display: inline-block;
+	width: 40px;
+	height: 40px;
+    border: 1px solid #FFF;
+    border-radius: 50%;
+}
+
+.circle2 {
+    border: 1px solid #B7AC8B;
+}
+
+.circle2:hover {
+    border: 1px solid #464D6A;
+    color: #464D6A;
+}
+
+.circle2 a:hover {
+    color: #464D6A;
+}    
+
+.noMarginTop {
+    margin-top: 0;
+}
+
+.noMarginRight {
+    margin-right: 0;
+}
+
+.noMarginBottom {
+    margin-bottom: 0;
+}
+
+.noMarginLeft {
+    margin-left: 0;
+}
+
+.noMargins {
+    margin: 0;
+}
+
+.marginTop {
+    margin-top: 10px;
+}
+
+.marginTop2 {
+    margin-top: 15px;
+}
+
+.socialMargin {
+    margin-right: 3px;
+}
+
+.marginRight{
+    margin-right: 10px;
+}
+
+.marginRight2 {
+    margin-right: 15px;
+}
+
+.marginBottom {
+    margin-bottom: 10px;
+}
+
+.marginBottom2 {
+    margin-bottom: 15px;
+}
+
+.marginBottomForm {
+    margin-bottom: 100px;
+}
+
+.marginLeft {
+    margin-left: 10px;
+}
+
+.paddingTop {
+    padding-top: 30px;
+}
+
+.paddingRight {
+    padding-right: 30px;
+}
+
+.paddingBottom {
+    padding-bottom: 30px;
+}
+
+.paddingLeft {
+    padding-left: 30px;
+}
+
+.noPaddingLeft {
+    padding-left: 0;
+}
+/* ===================================== */
+/* =========== FORMS ========== */
+/* ===================================== */
+
+/* quick booking form */
+
+#quickReserve select,
+#quickReserve input {
+    width: 137px;
+}
+
+.infield {
+    position: relative;
+    float: right;
+    bottom: 23px;
+    left: -10px;
+}
+
+/* newsletter sign up form */
+
+#newsletterSignUp input {
+    width: 420px;
+    margin: 18px 40px 0;
+}
+
+/* reservations form */
+
+#contactReservationsForm input,
+#contactReservationsForm select,
+#contactsForm input,
+#contactsForm select{
+    width: 100%;
+}
+
+#contactReservationsForm textarea,
+#contactsForm textarea {
+    width: 97%;
+    height: 150px;
+    padding: 10px;
+    border-color: #BBB;
+    border-radius: 5px;
+    font: 16px 'Ubuntu', sans-serif;
+}
+
+.radioInput {
+    margin-left: 56px;
+}
+
+#contactReservationsForm input[type='checkbox'],
+#contactsForm input[type='checkbox']{
+    width: auto;
+}
+
+/* ===================================== */
+/* ======= FORMS VALIDATION ======= */
+/* ===================================== */
+
+.message-error,
+.message-error2 {
+    color: red;
+    display: inline-block;
+    font-size: 9px;
+    margin-top: 5px;
+}
+
+.message-error2 {
+    position: absolute;
+}
+
+
+.message-success{
+    color: #464D6A;
+    display: inline-block;
+    font-size: 9px;
+    margin-top: 5px;
+}
+
+
+
+/* ===================================== */
+/* ======= BUTTONS ======= */
+/* ===================================== */
+
+/* hero image gallery */
+
+#previous,
+#next {
+    width: 45px;
+    height: 45px;
+    border: 0;
+    background-color: rgba(183, 172, 139, 0.7);
+    color: #FFF;
+}
+
+#previous {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 30;
+}
+
+#next {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: 30;
+}
+
+/* quick bookings */
+
+.buttonOne {
+    padding: 7px 25px;
+    border: 0;
+    border-radius: 3px;
+}
+
+.buttonTwo {
+    padding: 10px 15px;
+    font-size: 14px;
+    border: 1px solid #FFF;
+    border-radius: 3px;
+    background-color: rgba(0,0,0,0.5);
+}
+
+#quickReserve button {
+    margin: 30px 0 0 0;
+}
+
+/* newsletter sign up */
+
+#newsletterSignUp button {
+    margin-top: 17px;
+}
+
+/* hovers */
+
+.buttonPurple:hover {
+    background: rgba(70,77,106,0.6);
+}
+
+.buttonPurple:hover a {
+    color: #FFF !important;
+}
+
+.buttonGold:hover {
+    background: rgba(183,172,139,0.6);
+}
+
+.buttonTwo:hover {
+    background-color: rgba(0,0,0,0.2);
+}
+
+#previous:hover,
+#next:hover,
+.closeButton:hover {
+    background-color: rgba(183, 172, 139, 0.5);
+}
+
+.readMore:hover {
+    color: #464D6A;
+}
+
+/* ===================================== */
+/* ======= POP UP MODALS ======= */
+/* ===================================== */
+
+#overlayStandard,
+#overlaySuperior,
+#overlayPenthouse,
+#overlayNorthAmerica,
+#overlaySouthAmerica,
+#overlayEurope,
+#overlayAsia,
+#overlayOceania {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+#overlayStandard.hide,
+#overlaySuperior.hide,
+#overlayPenthouse.hide,
+#overlayMapNA.hide,
+#overlayNorthAmerica.hide,
+#overlaySouthAmerica.hide,
+#overlayEurope.hide,
+#overlayAsia.hide,
+#overlayOceania.hide {
+    width: 0;
+    height: 0;
+}
+
+.modalContainer {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    box-sizing: border-box;
+    width: 700px;
+    padding: 45px 25px 25px;
+    margin: 0 auto;
+    background: #FFF;
+    font-size: 13px;
+    z-index: 50;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%,-50%);
+}
+
+.modalContainer2 {
+    width: 350px;
+}
+
+.popUpListContainer {
+    width: 500px;
+    margin-bottom: 10px;
+}
+
+.closeButton {
+    position: absolute;
+    top: 13px;
+    right: 0;
+    padding: 7px 25px 7px 20px;
+    font-size: 15px;
+    z-index: 40;
+}
+
+/* ===================================== */
+/* ======= Printing ======= */
+/* ===================================== */
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    #mainNavMenu,
+    #galleryContainer,
+    #quickBookContainer,    
+    #newsletterContainer,
+    footer {
+        display: none;
+    }
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

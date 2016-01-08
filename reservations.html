@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Goldway Auckland | Reservations</title>
+    <!-- meta information -->
+    <meta name="description" content="Goldway International Hotel Auckland - Bookings and Reservations Page">
+	<meta name="keywords" content="goldway, goldway international, hotels, five star, Accomodation, hospitality, luxury, bookings, reservations, rooms">
+    <!-- stylesheets -->
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <!-- google fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Marcellus' rel='stylesheet' type='text/css'>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <!-- unslide script -->
+    <script src="//code.jquery.com/jquery-latest.min.js"></script>
+    <script src="//unslider.com/unslider.min.js"></script>
+     <!-- date picker files -->
+    <link rel="stylesheet" href="css/datepicker.css" />
+<!--    <link rel="stylesheet" href="jquery-ui.css" />-->
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+	<!-- mini navigation container starts -->
+    <div id="miniNavContainer" class="darkVBg">
+        <!-- center container -->
+        <div class="containerCenter">
+           <div class="containerWrapper">
+                <!-- hotel contact info -->     	
+                <span class="marginRight"><i class="fa fa-phone fa-lg marginRight"></i>Call Us: <a href="tel: 0800 782 548" class="noUnderline">0800 782 548</a></span>
+                <span><i class="fa fa-envelope-o fa-lg marginRight"></i>Email: <a href="mailto: auckland@goldwayinternational.com" class="noUnderline">auckland@goldwayinternational.com</a></span>
+            </div>
+        </div>
+    </div>
+    <!-- main navigation container starts -->
+    <div id="mainNavContainer" class="whiteBg">
+        <!-- center container -->
+        <div class="containerCenter">
+            <div class="containerWrapper selfClear">
+                <!-- hotel logo	-->
+                <a href="home.html"><img src="images/logo.png" alt="goldWay-International-logo" class="floatLeft" /></a>
+                <!-- menu items -->
+                <ul id="mainNavMenu" class="headingFont floatLeft textCaps">
+                    <li><a href="rooms.html" class="noUnderline">Rooms</a></li>
+                    <li><a href="facilities.html" class="noUnderline">Facilities</a></li>
+                    <li><a href="dining.html" class="noUnderline">Dining</a></li>
+                    <li><a href="contact.html" class="noUnderline">Contact</a></li>
+                    <li class="darkVBg buttonPurple"><a href="reservations.html" class="noUnderline">Reservations</a></li>
+                </ul>
+            </div>
+        </div>        
+    </div>
+    <!-- hero image starts -->
+    <div id="galleryContainer">
+        <!-- hero image -->
+        <div class="hero2">
+                <img src="images/reservationsHeroImg.jpg" alt="goldway-auckland-reservations-hero-image" />
+        </div>
+    </div>
+    <!-- gold strip -->
+    <div id="goldStrip" class="goldBg boxShadow"></div>
+    <!-- main body section starts-->
+    <div id="mainBodyContainer" class="marginBottomForm">
+         <div class="containerCenter">
+           <div class="containerWrapper selfClear">
+               <h1 class="textGold textCaps alignCenter mainTitleMargin">Reservations</h1>
+               <p class="captionText noMargins">(*) Required Fields</p>
+               <!-- main form starts -->
+               <div class="mainFormsGrid floatLeft">
+                 <form action="http://google.com" method="post" id="contactReservationsForm">
+                    <!-- personal details -->
+                    <h3 class="textCaps textDarkV noMarginTop noMarginBottom">Personal Details</h3>
+                    <!-- first name -->
+                    <div class="mainBodyGrid lessMargin floatLeft noMarginBottom">
+                        <label class="labelTitle goldText marginRight">* First name:</label>
+		                <input type="text" name="firstName" id="firstName" />
+                        <span id="firstNameMessage"></span>
+                    </div>
+                    <!-- last name -->
+                    <div class="mainBodyGrid lessMargin floatLeft noMarginRight noMarginBottom">
+                        <label class="labelTitle goldText marginRight">* Last name:</label>
+		                <input type="text" name="lastName" id="lastName" />
+                        <span id="lastNameMessage"></span>
+                    </div>
+                    <!-- email -->
+                    <div class="mainBodyGrid lessMargin floatLeft marginTop2">
+                        <label class="labelTitle goldText marginRight">* Email:</label>
+		                <input type="text" name="email" id="email" />
+                        <span id="emailMessage"></span>
+                    </div>
+                    <!-- telephone -->
+                    <div class="mainBodyGrid lessMargin floatLeft noMarginRight marginTop2">
+                        <label class="labelTitle goldText marginRight">Telephone:</label>
+		                <input type="text" name="telephone" id="telephone" />
+                        <span id="telephoneMessage"></span>
+                    </div>
+                    <!-- stay information -->
+                    <!-- check in and check out date -->
+                    <div class="mainBodyGrid lessMargin floatLeft">
+                     <h3 class="textCaps textDarkV noMarginTop">Stay Information</h3>
+                      <!-- check in -->
+                       <div class="mainBodyHalf marginRight floatLeft">
+                           <label class="labelTitle goldText marginRight floatLeft">* Check-in:</label>
+		                    <input type="text" name="checkInDate" id="checkInDate" class="cal" placeholder="Choose date" />
+		                    <i class="fa fa-calendar infield"></i>
+		                    <span id="checkInDateMessage"></span>
+                       </div>
+                       <!-- check out -->
+                       <div class="mainBodyHalf floatLeft">
+                           <label class="labelTitle goldText marginRight floatLeft">* Check-out:</label>
+		                       <input type="text" name="checkOutDate" id="checkOutDate" class="cal" placeholder="Choose date"/>
+		                       <i class="fa fa-calendar infield"></i>
+		                       <span id="checkOutDateMessage"></span>
+                       </div>
+                       <!-- no. of rooms -->
+                       <div class="mainBodyThird clearBoth floatLeft">
+                           <label class="labelTitle goldText marginRight floatLeft">* Rooms:</label>
+		                    <select name="rooms" id="rooms">
+                                <option>Select</option>
+                                <option value="1">1 room</option>
+                                <option value="2">2 rooms</option>
+                                <option value="3">3 rooms</option>
+                                <option value="4">4 rooms</option>
+                                <option value="5">5 rooms</option>
+                            </select>
+                            <span id="roomsMessage"></span>
+                       </div>
+                       <!-- no. of adults -->
+                       <div class="mainBodyThird floatLeft">
+                           <label class="labelTitle goldText marginRight floatLeft">* Adults:</label>
+		                    <select name="adults" id="adults">
+                                <option>Select</option>
+                                <option value="1">1 adult</option>
+                                <option value="2">2 adults</option>
+                                <option value="3">3 adults</option>
+                                <option value="4">4 adults</option>
+                                <option value="5">5 adults</option>
+                        </select>
+                        <span id="adultsMessage"></span>
+                       </div>
+                       <!-- no. of children -->
+                       <div class="mainBodyThird floatLeft noMarginRight">
+                           <label class="labelTitle goldText marginRight floatLeft">Children:</label>
+		                    <select name="children" id="children">
+                                <option>Select</option>
+                                <option value="1">1 child</option>
+                                <option value="2">2 children</option>
+                                <option value="3">3 children</option>
+                                <option value="4">4 children</option>
+                                <option value="5">5 children</option>
+                            </select>
+                       </div>
+                       <!-- date flexibility -->
+                       <!-- fixed -->
+                       <div class="mainBodyHalf marginTop2 marginRight clearBoth floatLeft">
+                           <label class="labelTitle goldText marginRight floatLeft">Dates are Fixed</label>
+		                   <input class="radioInput" type="radio" name="dates" id="datesFixed" value="datesFixed" />
+                       </div>
+                       <!-- flexi -->
+                       <div class="mainBodyHalf marginTop2 floatLeft">
+                           <label class="labelTitle goldText marginRight floatLeft">Dates are Flexible</label>
+		                   <input class="radioInput" type="radio" name="dates" id="datesFlexi" value="datesFlexi" />
+                       </div>
+                    </div>
+                    <!-- special requirements -->
+                    <div class="mainBodyGrid lessMargin floatLeft noMarginRight">
+                        <h3 class="textCaps textDarkV noMarginTop">Special Requirements</h3>
+                        <!-- checkboxes start -->
+                        <input class="marginRight" type="checkbox" name="wheelchair" value="wheelchair"><span class="checkBoxText">Wheelchair access</span><br>
+                        <input class="marginRight" type="checkbox" name="highRoom" value="highRoom"><span class="checkBoxText">Room on higher floors</span><br>
+                        <input class="marginRight" type="checkbox" name="lowRoom" value="lowRoom"><span class="checkBoxText">Room on lower floors</span><br>
+                        <input class="marginRight" type="checkbox" name="extraBed" value="extraBed"><span class="checkBoxText">Extra roll-away bed</span><br>
+                        <input class="marginRight" type="checkbox" name="pillow" value="pillow"><span class="checkBoxText">Anti-allergy pillow</span><br>
+                        <input class="marginRight" type="checkbox" name="safetyBox" value="safetyBox"><span class="checkBoxText">Safety Deposit Box</span><br>
+                    </div>
+                    <!-- additional comments -->
+                    <div class="lessMargin">
+                        <h3 class="textCaps textDarkV noMarginTop clearBoth">Additional Comments</h3>
+                        <label class="labelTitle goldText marginRight">Message:</label>
+                        <textarea></textarea>
+                    </div>
+                    <button id="submitForm" class="buttonOne buttonGold goldBg textCaps marginTop marginBottom" type="submit" value="submit">Submit</button>
+                    <button id="resetForm" class="buttonOne buttonPurple darkVBg textCaps marginTop marginBottom" type="reset" value="submit">Clear</button>
+                 </form>  
+               </div>
+               <!-- side information bar -->
+               <div class="sideBodyGrid floatLeft noMarginRight">
+                   <h3 class="textCaps textDarkV noMarginTop">Explore Auckland</h3>
+                   <!-- sky city -->
+                   <div>
+                     <img src="images/reservationsSkyThumb.jpg" alt="skytower-auckland-image" />
+                     <div class="bodyGridMask2">
+                          <h4 class="textCaps textWhite">Sky Tower &amp; Casino</h4>
+                     </div>
+                   </div>
+                   <p class="captionText captionPosition noMarginTop">Auckland city's icon and the tallest building in the Southern Hemisphere.<br /><a class="textCaps noUnderline textGold marginTop displayInlineBlock readMore" href="https://www.skycityauckland.co.nz/" target="_blank">Read More</a></p>
+                   <!-- auckland zoo -->
+                   <div class="sideContent">
+                     <img src="images/reservationsZooThumb.jpg" alt="auckland-zoo-image" />
+                     <div class="bodyGridMask2">
+                          <h4 class="textCaps textWhite">Auckland Zoo</h4>
+                     </div>
+                     <p class="captionText captionPosition noMarginTop">Home to the largest collection of native and exotic animals in New Zealand.<br /><a class="textCaps noUnderline textGold marginTop displayInlineBlock readMore" href="http://www.aucklandzoo.co.nz/default" target="_blank">Read More</a></p>
+                   </div>
+                   <!-- kelly tarltons -->
+                   <div class="sideContent">
+                     <img src="images/reservationsKellyThumb.jpg" alt="kelly-tarltons-image" />
+                     <div class="bodyGridMask2">
+                          <h4 class="textCaps textWhite">Kelly Tarlton's</h4>
+                     </div>
+                     <p class="captionText captionPosition noMarginTop">Just moments from the famous Mission Bay beach, Kelly Tarlton's is one of Auckland's best attractions.<br /><a class="textCaps noUnderline textGold marginTop displayInlineBlock readMore" href="http://www.kellytarltons.co.nz/" target="_blank">Read More</a></p>
+                   </div>
+                   <!-- auckland bridge climb -->
+                   <div class="sideContent">
+                     <img src="images/reservationsBridgeThumb.jpg" alt="auckland-bridge-climb-image" />
+                     <div class="bodyGridMask2">
+                          <h4 class="textCaps textWhite">Bridge Climb</h4>
+                     </div>
+                     <p class="captionText captionPosition noMarginTop">The only one of its kind in New Zealand, and is not to be missed if you want to indulge in a truly unique Auckland sightseeing tour.<br /><a class="textCaps noUnderline textGold marginTop displayInlineBlock readMore" href="http://www.bungy.co.nz/auckland-bridge/auckland-bridge-climb" target="_blank">Read More</a></p>
+                   </div>
+               </div>
+                
+           </div>
+        </div>
+    </div>
+    <!-- newsletter signup section starts-->
+    <div id="newsletterContainer" class="silverBg clearBoth">
+        <div class="containerCenter">
+           <div class="containerWrapper selfClear">
+                <!-- newsletter form -->
+                <h3 class="textCaps textGold floatLeft">Sign up to receive latest offers:</h3>
+                <form action="http://google.com" method="post" id="newsletterSignUp">
+               <input class="newsletterGrid floatLeft" type="text" name="email" id="emailNews" placeholder="Enter email here"/>
+                   <span id="emailNewsMessage"></span>             
+                   <button id="newsSubmit" class="buttonOne buttonGold goldBg textCaps" type="submit" value="subscribe">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- footer section starts -->
+    <div id="footerContainer"  class="darkVBg">
+        <div class="containerCenter">
+           <div class="containerWrapper">
+               <footer id="mainFooter" class="alignCenter textWhite">
+                   <ul>
+                       <li>
+                           <!-- address line -->
+                           <span class="marginRight">Princes Wharf 152 Quay Street, Auckland, 1010, New Zealand</span>
+                           <!-- social media icons -->
+                           <span class="circle marginRight">
+                               <a href="http://facebook.com" class="noUnderline" target="_blank"><i class="fa fa-facebook fa-2x socialPos"></i></a>
+                           </span>
+                           <span class="circle marginRight">
+                               <a href="http://twitter.com" class="noUnderline" target="_blank"><i class="fa fa-twitter fa-2x socialPos"></i></a>
+                           </span>
+                           <span class="circle marginRight">
+                                <a href="http://google.com" class="noUnderline" target="_blank"><i class="fa fa-google-plus fa-2x socialPos"></i></a>
+                           </span>
+                           <!-- contact line -->
+                           <span class="marginRight">
+                               T: <a href="tel: 0800 782 548" class="noUnderline">0800 782 548</a>
+                           </span>
+                           <span class="marginRight">
+                               E: <a href="mailto: auckland@goldwayinternational.com" class="noUnderline">auckland@goldwayinternational.com</a>
+                           </span>
+                      </li>
+                   </ul>
+                   <hr />
+                   <!-- navigation footer -->
+                   <ul>
+                       <li class="textCaps headingFont">
+                           <span class="marginRight"><a href="rooms.html" class="noUnderline">Rooms</a></span>
+                           <span class="marginRight"><a href="facilities.html" class="noUnderline">Facilities</a></span>
+                           <span class="marginRight"><a href="dining.html" class="noUnderline">Dining</a></span>
+                           <span class="marginRight"><a href="contact.html" class="noUnderline">Contact</a></span>
+                           <span class="marginRight"><a href="reservations.html" class="noUnderline">Reservations</a></span>
+                       </li>
+                       <li class="finePrint">© Goldway International Hotels. All Rights Reserved 2015</li>
+                       <li class="finePrint">ARTesano Web Development &amp; Design</li>
+                   </ul>
+                 
+               </footer>
+           </div>
+        </div>
+    </div>
+   <script type="text/javascript" src="js/jsFormValidator.js"></script>
+   <script type="text/javascript" src="js/javascript.js"></script> 
+</body>
+</html>

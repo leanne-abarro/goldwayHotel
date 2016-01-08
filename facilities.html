@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Goldway Auckland | Facilities</title>
+    <!-- meta information -->
+    <meta name="description" content="Goldway International Hotel Auckland - The most advanced conference sites in the world offers 110,000 square feet of space on 6 floors served by a separate elevator bank.">
+	<meta name="keywords" content="goldway, goldway international, hotels, five star, Accomodation, hospitality, luxury, conference center, events, functions, function rooms, business centers">
+    <!-- stylesheets -->
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <!-- google fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Marcellus' rel='stylesheet' type='text/css'>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <!-- unslide script -->
+    <script src="//code.jquery.com/jquery-latest.min.js"></script>
+    <script src="//unslider.com/unslider.min.js"></script>
+    <!-- date picker files -->
+    <link rel="stylesheet" href="css/datepicker.css" />
+<!--    <link rel="stylesheet" href="jquery-ui.css" />-->
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+</head>
+<body>
+	<!-- mini navigation container starts -->
+    <div id="miniNavContainer" class="darkVBg">
+        <!-- center container -->
+        <div class="containerCenter">
+           <div class="containerWrapper">
+                <!-- hotel contact info -->     	
+                <span class="marginRight"><i class="fa fa-phone fa-lg marginRight"></i>Call Us: <a href="tel: 0800 782 548" class="noUnderline">0800 782 548</a></span>
+                <span><i class="fa fa-envelope-o fa-lg marginRight"></i>Email: <a href="mailto: auckland@goldwayinternational.com" class="noUnderline">auckland@goldwayinternational.com</a></span>
+            </div>
+        </div>
+    </div>
+    <!-- main navigation container starts -->
+    <div id="mainNavContainer" class="whiteBg">
+        <!-- center container -->
+        <div class="containerCenter">
+            <div class="containerWrapper selfClear">
+                <!-- hotel logo	-->
+                <a href="home.html"><img src="images/logo.png" alt="goldWay-International-logo" class="floatLeft" /></a>
+                <!-- menu items -->
+                <ul id="mainNavMenu" class="headingFont floatLeft textCaps">
+                    <li><a href="rooms.html" class="noUnderline">Rooms</a></li>
+                    <li><a href="facilities.html" class="noUnderline">Facilities</a></li>
+                    <li><a href="dining.html" class="noUnderline">Dining</a></li>
+                    <li><a href="contact.html" class="noUnderline">Contact</a></li>
+                    <li class="darkVBg buttonPurple"><a href="reservations.html" class="noUnderline">Reservations</a></li>
+                </ul>
+            </div>
+        </div>        
+    </div>
+    <!-- hero image starts -->
+    <div id="galleryContainer">
+        <!-- hero image -->
+        <div class="hero2">
+                <img src="images/facilitiesHeroImg.jpg" alt="goldway-auckland-facilities-hero-image" />
+        </div>
+    </div>
+    <!-- gold strip -->
+    <div id="goldStrip" class="goldBg boxShadow"></div>
+    <!-- quick booking container starts -->
+    <div id="quickBookContainer">
+        <div class="containerCenter">
+           <div class="containerWrapper selfClear">
+                <!-- quick booking reservation box -->
+                <div id="quickBookBox" class="whiteBg boxShadow">
+                   <form action="http://google.com" method="post" id="quickReserve">
+                        <!-- no. of rooms -->
+                        <div class="quickBookGrid floatLeft">
+                            <label>* No. of Rooms:</label>
+                            <select name="roomNumber" id="quickRoomNumber">
+                                <option>Please select</option>
+                                <option value="1">1 room</option>
+                                <option value="2">2 rooms</option>
+                                <option value="3">3 rooms</option>
+                                <option value="4">4 rooms</option>
+                                <option value="5">5 rooms</option>
+                            </select>
+                            <span id="quickRoomNumberMessage"></span>
+                        </div>
+                        <!-- check-in date -->
+                        <div class="quickBookGrid floatLeft">
+                            <label>* Check-in:</label>
+                            <input name="quickCheckInDate" type="text" id="quickCheckInDate" class="cal" value="" placeholder="Choose date">
+                            <i class="fa fa-calendar infield"></i>
+                            <span id="quickCheckInDateMessage"></span>
+                        </div>
+                        <!-- check-out date -->
+                        <div class="quickBookGrid floatLeft">
+                            <label>* Check-out:</label>
+                            <input name="quickCheckOutDate" type="text" id="quickCheckOutDate" class="cal" value="" placeholder="Choose date">
+                            <i class="fa fa-calendar infield"></i>
+                            <span id="quickCheckOutDateMessage"></span>
+                        </div>
+                        <!-- no. of adults -->
+                        <div class="quickBookGrid floatLeft">
+                            <label>* Adults:</label>
+                            <select name="adultNumber" id="quickAdultNumber">
+                                <option>Please select</option>
+                                <option value="1">1 adult</option>
+                                <option value="2">2 adults</option>
+                                <option value="3">3 adults</option>
+                                <option value="4">4 adults</option>
+                                <option value="5">5 adults</option>
+                            </select>
+                            <span id="quickAdultNumberMessage"></span>
+                        </div>
+                        <!-- no. of children -->
+                        <div class="quickBookGrid floatLeft">
+                            <label>Children:</label>
+                            <select name="childNumber" id="quickChildNumber">
+                                <option>Please select</option>
+                                <option value="1">1 child</option>
+                                <option value="2">2 children</option>
+                                <option value="3">3 children</option>
+                                <option value="4">4 children</option>
+                                <option value="5">5 children</option>
+                            </select>
+                        </div>
+                        <!-- button -->
+                        <div class="quickBookGrid floatLeft">
+                            <button class="buttonOne buttonPurple darkVBg textCaps" type="submit">Check</button>
+                        </div>
+                    </form>
+                    <!-- features text-->
+                    <!-- television -->
+                    <div class="quickBookText clearBoth floatLeft alignCenter">
+                        <i class="fa fa-desktop marginRight"></i>
+                        <span>Satellite Television</span>
+                    </div>
+                    <!-- wifi -->
+                    <div class="quickBookText floatLeft alignCenter">
+                        <i class="fa fa-wifi marginRight"></i>
+                        <span>Free Wi-fi Access</span>
+                    </div>
+                    <!-- room service -->
+                    <div class="quickBookText floatLeft alignCenter">
+                        <i class="fa fa-bell marginRight"></i>
+                        <span>Room Service</span>
+                    </div>
+                    <!-- valet parking -->
+                    <div class="quickBookText floatLeft alignCenter">
+                        <i class="fa fa-desktop marginRight"></i>
+                        <span>Valet Parking</span>
+                    </div>
+                    <!-- disabled access -->
+                    <div class="quickBookText floatLeft alignCenter">
+                        <i class="fa fa-wheelchair marginRight"></i>
+                        <span>Disabled Access</span>
+                    </div>
+                </div>               
+           </div> 
+        </div>
+    </div>
+    <!-- main body section starts-->
+    <div id="mainBodyContainer">
+         <div class="containerCenter">
+           <div class="containerWrapper selfClear">
+               <h1 class="textGold textCaps alignCenter mainTitleMargin">Business Services &amp; Facilities</h1>
+               <p class="alignCenter">Goldway Auckland has one of the most advanced conference sites in the world. It offers 110,000 square feet of space on 6 floors served by a separate elevator bank.</p>
+               <!-- two column facilities info -->
+               <!-- column 1 -->
+               <div class="twoColumnGrid floatLeft">
+                   <h2 class="textDarkV textCaps">Rooms Available</h2>
+                   <p>The 37 rooms that are available:</p>
+                   <ul class="lineHeightBig">
+                       <li>4 rooms designed for meetings of 10 -15</li>
+                       <li>17 rooms for meetings of 20 - 25</li>
+                       <li>6 rooms for meetings of 50 - 144</li>
+                       <li>10 boardrooms for 8</li>
+                       <li>18,000 square feet of conference dining area which offers <br /> 6 dining rooms for 24-250 people </li>
+                   </ul>
+               </div>
+               <!-- column 2 -->
+               <div class="twoColumnGrid featuresTextBox floatLeft noMarginRight">
+                   <h3 class="textWhite textCaps">Features</h3>
+                   <ul class="textWhite floatLeft noMarginTop noMarginLeft">
+                       <li>multizone fluorescent and <br />incandescent lighting</li>
+                       <li>climate control</li>
+                       <li>remote-control A/V equipment</li>
+                       <li>display rails</li>
+                       <li>pinnable wall surfaces</li>
+                   </ul>
+                   <ul class="textWhite floatLeft noMarginTop">
+                       <li>ergonomic leather chairs</li>
+                       <li>A/V booths and TV monitors</li>
+                       <li>PictureTel facility</li>
+                       <li>fiberoptic to satellite connections</li>
+                   </ul>
+               </div>
+                <!-- conference preview -->
+                <div class="mainBodyGrid lessMargin clearBoth floatLeft">
+                    <img src="images/confCenterThumb.jpg" alt="conference-center-preview-image" />
+                    <div class="bodyGridMask">
+                        <h3 class="textCaps textWhite">Conference Center</h3>
+                    </div>
+                    <p class="captionText captionPosition alignCenter">Goldway International Center. Expansive IACC-accredited meeting space</p>
+                </div>
+                <!-- business center preview -->
+                <div class="mainBodyGrid lessMargin floatLeft">
+                    <img src="images/businessCentreThumb.jpg" alt="business-center-preview-image" />
+                    <div class="bodyGridMask">
+                        <h3 class="textCaps textWhite">Business Center</h3>
+                    </div>
+                    <p class="captionText captionPosition alignCenter">Located on the 2nd floor of the Conference Center</p>
+                </div>
+                <!-- fitness center preview -->
+                <div class="mainBodyGrid lessMargin floatLeft noMarginRight">
+                    <img src="images/fitnessCenterThumb.jpg" alt="fitness-center-preview-image" />
+                    <div class="bodyGridMask">
+                        <h3 class="textCaps textWhite">Fitness Center</h3>
+                    </div>
+                    <p class="captionText captionPosition alignCenter">Located on the 16th floor and accessible 24 hours a day. Certified Pure Allergy Friendly.</p>
+                </div>
+                <!-- additional facilities info -->
+                <div class="additionalInfoWrap clearBoth">
+                    <!-- disabled access and gift shop info -->
+                    <div class="mainBodyGrid lessMargin floatLeft">
+                        <h4 class="textGold textCaps noMarginBottom">Disabled Access</h4>
+                        <p>Accessible to someone with limited mobility, but able to walk a few paces and up to a maximum of three steps.</p>
+                        <h4 class="textGold textCaps noMarginBottom">Gift Shop</h4>
+                        <p>Located on the lobby level.</p>
+                    </div>
+                    <!-- theatre and concierge info -->
+                    <div class="mainBodyGrid lessMargin floatLeft">
+                        <h4 class="textGold textCaps noMarginBottom">Theatre Ticket Services</h4>
+                        <p>Located at the Concierge desk at the lobby level.</p>
+                        <h4 class="textGold textCaps noMarginBottom">Concierge Services</h4>
+                        <p>Located on the lobby level.</p>
+                    </div>
+                    <!-- other services -->
+                    <div class="mainBodyGrid lessMargin floatLeft noMarginRight">
+                        <h4 class="textGold textCaps noMarginBottom">Other Services</h4>
+                        <ul class="lineHeightBig">
+                            <li>Valet Parking</li>
+                            <li>Laundry Services</li>
+                            <li>Multilingual Staff</li>
+                            <li>Frequent Guest Program</li>
+                        </ul>
+                    </div>
+                </div>
+           </div>
+        </div>
+    </div>
+    
+    <!-- newsletter signup section starts-->
+    <div id="newsletterContainer" class="silverBg clearBoth">
+        <div class="containerCenter">
+           <div class="containerWrapper selfClear">
+                <!-- newsletter form -->
+                <h3 class="textCaps textGold floatLeft">Sign up to receive latest offers:</h3>
+                <form action="http://google.com" method="post" id="newsletterSignUp">
+               <input class="newsletterGrid floatLeft" type="text" name="email" id="emailNews" placeholder="Enter email here"/>
+                   <span id="emailNewsMessage"></span>             
+                   <button id="newsSubmit" class="buttonOne buttonGold goldBg textCaps" type="submit" value="subscribe">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- footer section starts -->
+    <div id="footerContainer"  class="darkVBg">
+        <div class="containerCenter">
+           <div class="containerWrapper">
+               <footer id="mainFooter" class="alignCenter textWhite">
+                   <ul>
+                       <li>
+                           <!-- address line -->
+                           <span class="marginRight">Princes Wharf 152 Quay Street, Auckland, 1010, New Zealand</span>
+                           <!-- social media icons -->
+                           <span class="circle marginRight">
+                               <a href="http://facebook.com" class="noUnderline" target="_blank"><i class="fa fa-facebook fa-2x socialPos"></i></a>
+                           </span>
+                           <span class="circle marginRight">
+                               <a href="http://twitter.com" class="noUnderline" target="_blank"><i class="fa fa-twitter fa-2x socialPos"></i></a>
+                           </span>
+                           <span class="circle marginRight">
+                                <a href="http://google.com" class="noUnderline" target="_blank"><i class="fa fa-google-plus fa-2x socialPos"></i></a>
+                           </span>
+                           <!-- contact line -->
+                           <span class="marginRight">
+                               T: <a href="tel: 0800 782 548" class="noUnderline">0800 782 548</a>
+                           </span>
+                           <span class="marginRight">
+                               E: <a href="mailto: auckland@goldwayinternational.com" class="noUnderline">auckland@goldwayinternational.com</a>
+                           </span>
+                      </li>
+                   </ul>
+                   <hr />
+                   <!-- navigation footer -->
+                   <ul>
+                       <li class="textCaps headingFont">
+                           <span class="marginRight"><a href="rooms.html" class="noUnderline">Rooms</a></span>
+                           <span class="marginRight"><a href="facilities.html" class="noUnderline">Facilities</a></span>
+                           <span class="marginRight"><a href="dining.html" class="noUnderline">Dining</a></span>
+                           <span class="marginRight"><a href="contact.html" class="noUnderline">Contact</a></span>
+                           <span class="marginRight"><a href="reservations.html" class="noUnderline">Reservations</a></span>
+                       </li>
+                       <li class="finePrint">© Goldway International Hotels. All Rights Reserved 2015</li>
+                       <li class="finePrint">ARTesano Web Development &amp; Design</li>
+                   </ul>
+               </footer>
+           </div>
+        </div>
+    </div>
+  <script type="text/javascript" src="js/jsFormValidator.js"></script>
+  <script type="text/javascript" src="js/javascript.js"></script> 
+</body>
+</html>

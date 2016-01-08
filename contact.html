@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Goldway Auckland | Contact</title>
+    <!-- meta information -->
+    <meta name="description" content="Goldway International Hotel Auckland - Contact us now">
+	<meta name="keywords" content="goldway, goldway international, hotels, five star, Accomodation, hospitality, luxury, contact details, hotel address, hotel phone number, social media">
+    <!-- stylesheets -->
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <!-- google fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Marcellus' rel='stylesheet' type='text/css'>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <!-- unslide script -->
+    <script src="//code.jquery.com/jquery-latest.min.js"></script>
+    <script src="//unslider.com/unslider.min.js"></script>
+     <!-- date picker files -->
+    <link rel="stylesheet" href="css/datepicker.css" />
+<!--    <link rel="stylesheet" href="jquery-ui.css" />-->
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+	<!-- mini navigation container starts -->
+    <div id="miniNavContainer" class="darkVBg">
+        <!-- center container -->
+        <div class="containerCenter">
+           <div class="containerWrapper">
+                <!-- hotel contact info -->     	
+                <span class="marginRight"><i class="fa fa-phone fa-lg marginRight"></i>Call Us: <a href="tel: 0800 782 548" class="noUnderline">0800 782 548</a></span>
+                <span><i class="fa fa-envelope-o fa-lg marginRight"></i>Email: <a href="mailto: auckland@goldwayinternational.com" class="noUnderline">auckland@goldwayinternational.com</a></span>
+            </div>
+        </div>
+    </div>
+    <!-- main navigation container starts -->
+    <div id="mainNavContainer" class="whiteBg">
+        <!-- center container -->
+        <div class="containerCenter">
+            <div class="containerWrapper selfClear">
+                <!-- hotel logo	-->
+                <a href="home.html"><img src="images/logo.png" alt="goldWay-International-logo" class="floatLeft" /></a>
+                <!-- menu items -->
+                <ul id="mainNavMenu" class="headingFont floatLeft textCaps">
+                    <li><a href="rooms.html" class="noUnderline">Rooms</a></li>
+                    <li><a href="facilities.html" class="noUnderline">Facilities</a></li>
+                    <li><a href="dining.html" class="noUnderline">Dining</a></li>
+                    <li><a href="contact.html" class="noUnderline">Contact</a></li>
+                    <li class="darkVBg buttonPurple"><a href="reservations.html" class="noUnderline">Reservations</a></li>
+                </ul>
+            </div>
+        </div>        
+    </div>
+    <!-- hero image starts -->
+    <div id="galleryContainer">
+        <!-- hero image -->
+        <div class="hero2">
+                <img src="images/contactHeroImg.jpg" alt="goldway-auckland-dining-hero-image" />
+        </div>
+    </div>
+    <!-- gold strip -->
+    <div id="goldStrip" class="goldBg boxShadow"></div>
+    <!-- quick booking container starts -->
+    <div id="quickBookContainer">
+        <div class="containerCenter">
+           <div class="containerWrapper selfClear">
+                <!-- quick booking reservation box -->
+                <div id="quickBookBox" class="whiteBg boxShadow">
+                   <form action="http://google.com" method="post" id="quickReserve">
+                        <!-- no. of rooms -->
+                        <div class="quickBookGrid floatLeft">
+                            <label>* No. of Rooms:</label>
+                            <select name="roomNumber" id="quickRoomNumber">
+                                <option>Please select</option>
+                                <option value="1">1 room</option>
+                                <option value="2">2 rooms</option>
+                                <option value="3">3 rooms</option>
+                                <option value="4">4 rooms</option>
+                                <option value="5">5 rooms</option>
+                            </select>
+                            <span id="quickRoomNumberMessage"></span>
+                        </div>
+                        <!-- check-in date -->
+                        <div class="quickBookGrid floatLeft">
+                            <label>* Check-in:</label>
+                            <input name="quickCheckInDate" type="text" id="quickCheckInDate" class="cal" value="" placeholder="Choose date">
+                            <i class="fa fa-calendar infield"></i>
+                            <span id="quickCheckInDateMessage"></span>
+                        </div>
+                        <!-- check-out date -->
+                        <div class="quickBookGrid floatLeft">
+                            <label>* Check-out:</label>
+                            <input name="quickCheckOutDate" type="text" id="quickCheckOutDate" class="cal" value="" placeholder="Choose date">
+                            <i class="fa fa-calendar infield"></i>
+                            <span id="quickCheckOutDateMessage"></span>
+                        </div>
+                        <!-- no. of adults -->
+                        <div class="quickBookGrid floatLeft">
+                            <label>* Adults:</label>
+                            <select name="adultNumber" id="quickAdultNumber">
+                                <option>Please select</option>
+                                <option value="1">1 adult</option>
+                                <option value="2">2 adults</option>
+                                <option value="3">3 adults</option>
+                                <option value="4">4 adults</option>
+                                <option value="5">5 adults</option>
+                            </select>
+                            <span id="quickAdultNumberMessage"></span>
+                        </div>
+                        <!-- no. of children -->
+                        <div class="quickBookGrid floatLeft">
+                            <label>Children:</label>
+                            <select name="childNumber" id="quickChildNumber">
+                                <option>Please select</option>
+                                <option value="1">1 child</option>
+                                <option value="2">2 children</option>
+                                <option value="3">3 children</option>
+                                <option value="4">4 children</option>
+                                <option value="5">5 children</option>
+                            </select>
+                        </div>
+                        <!-- button -->
+                        <div class="quickBookGrid floatLeft">
+                            <button class="buttonOne buttonPurple darkVBg textCaps" type="submit">Check</button>
+                        </div>
+                    </form>
+                    <!-- features text-->
+                    <!-- television -->
+                    <div class="quickBookText clearBoth floatLeft alignCenter">
+                        <i class="fa fa-desktop marginRight"></i>
+                        <span>Satellite Television</span>
+                    </div>
+                    <!-- wifi -->
+                    <div class="quickBookText floatLeft alignCenter">
+                        <i class="fa fa-wifi marginRight"></i>
+                        <span>Free Wi-fi Access</span>
+                    </div>
+                    <!-- room service -->
+                    <div class="quickBookText floatLeft alignCenter">
+                        <i class="fa fa-bell marginRight"></i>
+                        <span>Room Service</span>
+                    </div>
+                    <!-- valet parking -->
+                    <div class="quickBookText floatLeft alignCenter">
+                        <i class="fa fa-desktop marginRight"></i>
+                        <span>Valet Parking</span>
+                    </div>
+                    <!-- disabled access -->
+                    <div class="quickBookText floatLeft alignCenter">
+                        <i class="fa fa-wheelchair marginRight"></i>
+                        <span>Disabled Access</span>
+                    </div>
+                </div>               
+           </div> 
+        </div>
+    </div>
+    <!-- main body section starts-->
+    <div id="mainBodyContainer" class="marginBottomForm">
+         <div class="containerCenter">
+           <div class="containerWrapper selfClear">
+               <h1 class="textGold textCaps alignCenter mainTitleMargin">Contact us</h1>
+               <p class="alignCenter">Feel free to contact us on the form below or by reaching out through our other communication channels noted on this page. If you are looking to contact other Goldway Hotels around the world, please see the world map below.</p>
+               <p class="alignCenter">Reservations can also be made through your travel planner or direct with the hotel.</p>
+               <p class="captionText">(*) Required Fields</p>
+               <!-- main form starts -->
+               <div class="mainFormsGrid floatLeft noMarginTop">
+                 <form action="http://www.google.com" method="post" id="contactReservationsForm">
+                    <!-- first name -->
+                    <div class="mainBodyGrid lessMargin floatLeft noMarginTop noMarginBottom">
+                        <label class="labelTitle goldText marginRight">* First name:</label>
+		                <input type="text" name="firstName" id="firstName" />
+                        <span id="firstNameMessage"></span>
+                    </div>
+                    <!-- last name -->
+                    <div class="mainBodyGrid lessMargin floatLeft noMarginTop noMarginRight noMarginBottom">
+                        <label class="labelTitle goldText marginRight">* Last name:</label>
+		                <input type="text" name="lastName" id="lastName" />
+                        <span id="lastNameMessage"></span>
+                    </div>
+                    <!-- email -->
+                    <div class="mainBodyGrid lessMargin floatLeft marginTop2 noMarginBottom">
+                        <label class="labelTitle goldText marginRight">* Email:</label>
+		                <input type="text" name="email" id="email" />
+                        <span id="emailMessage"></span>
+                    </div>
+                    <!-- telephone -->
+                    <div class="mainBodyGrid lessMargin floatLeft noMarginRight marginTop2 noMarginBottom">
+                        <label class="labelTitle goldText marginRight">Telephone:</label>
+		                <input type="text" name="telephone" id="telephone" />
+                        <span id="telephoneMessage"></span>
+                    </div>
+                    <!-- subject -->
+                    <div class="mainBodyGrid floatLeft marginTop2">
+                        <label class="labelTitle goldText marginRight">Subject:</label>
+		               <input type="text" name="subjectLine" id="subjectLine" />
+                    </div>
+                    <!-- country -->
+                    <div class="mainBodyGrid floatLeft noMarginRight marginTop2">
+                        <label class="labelTitle goldText marginRight">* Country:</label>
+                        <select name="country" id="country">
+                            <option>Select Country</option>
+                            <option value="AF">Afghanistan</option>
+                            <option value="AX">Åland Islands</option>
+                            <option value="AL">Albania</option>
+                            <option value="DZ">Algeria</option>
+                            <option value="AS">American Samoa</option>
+                            <option value="AD">Andorra</option>
+                            <option value="AO">Angola</option>
+                            <option value="AI">Anguilla</option>
+                            <option value="AQ">Antarctica</option>
+                            <option value="AG">Antigua and Barbuda</option>
+                            <option value="AR">Argentina</option>
+                            <option value="AM">Armenia</option>
+                            <option value="AW">Aruba</option>
+                            <option value="AU">Australia</option>
+                            <option value="AT">Austria</option>
+                            <option value="AZ">Azerbaijan</option>
+                            <option value="BS">Bahamas</option>
+                            <option value="BH">Bahrain</option>
+                            <option value="BD">Bangladesh</option>
+                            <option value="BB">Barbados</option>
+                            <option value="BY">Belarus</option>
+                            <option value="BE">Belgium</option>
+                            <option value="BZ">Belize</option>
+                            <option value="BJ">Benin</option>
+                            <option value="BM">Bermuda</option>
+                            <option value="BT">Bhutan</option>
+                            <option value="BO">Bolivia</option>
+                            <option value="BA">Bosnia and Herzegovina</option>
+                            <option value="BW">Botswana</option>
+                            <option value="BV">Bouvet Island</option>
+                            <option value="BR">Brazil</option>
+                            <option value="IO">British Indian Ocean Territory</option>
+                            <option value="BN">Brunei Darussalam</option>
+                            <option value="BG">Bulgaria</option>
+                            <option value="BF">Burkina Faso</option>
+                            <option value="BI">Burundi</option>
+                            <option value="KH">Cambodia</option>
+                            <option value="CM">Cameroon</option>
+                            <option value="CA">Canada</option>
+                            <option value="CV">Cape Verde</option>
+                            <option value="KY">Cayman Islands</option>
+                            <option value="CF">Central African Republic</option>
+                            <option value="TD">Chad</option>
+                            <option value="CL">Chile</option>
+                            <option value="CN">China</option>
+                            <option value="CX">Christmas Island</option>
+                            <option value="CC">Cocos (Keeling) Islands</option>
+                            <option value="CO">Colombia</option>
+                            <option value="KM">Comoros</option>
+                            <option value="CG">Congo</option>
+                            <option value="CD">Congo, The Democratic Republic of The</option>
+                            <option value="CK">Cook Islands</option>
+                            <option value="CR">Costa Rica</option>
+                            <option value="CI">Cote D'ivoire</option>
+                            <option value="HR">Croatia</option>
+                            <option value="CU">Cuba</option>
+                            <option value="CY">Cyprus</option>
+                            <option value="CZ">Czech Republic</option>
+                            <option value="DK">Denmark</option>
+                            <option value="DJ">Djibouti</option>
+                            <option value="DM">Dominica</option>
+                            <option value="DO">Dominican Republic</option>
+                            <option value="EC">Ecuador</option>
+                            <option value="EG">Egypt</option>
+                            <option value="SV">El Salvador</option>
+                            <option value="GQ">Equatorial Guinea</option>
+                            <option value="ER">Eritrea</option>
+                            <option value="EE">Estonia</option>
+                            <option value="ET">Ethiopia</option>
+                            <option value="FK">Falkland Islands (Malvinas)</option>
+                            <option value="FO">Faroe Islands</option>
+                            <option value="FJ">Fiji</option>
+                            <option value="FI">Finland</option>
+                            <option value="FR">France</option>
+                            <option value="GF">French Guiana</option>
+                            <option value="PF">French Polynesia</option>
+                            <option value="TF">French Southern Territories</option>
+                            <option value="GA">Gabon</option>
+                            <option value="GM">Gambia</option>
+                            <option value="GE">Georgia</option>
+                            <option value="DE">Germany</option>
+                            <option value="GH">Ghana</option>
+                            <option value="GI">Gibraltar</option>
+                            <option value="GR">Greece</option>
+                            <option value="GL">Greenland</option>
+                            <option value="GD">Grenada</option>
+                            <option value="GP">Guadeloupe</option>
+                            <option value="GU">Guam</option>
+                            <option value="GT">Guatemala</option>
+                            <option value="GG">Guernsey</option>
+                            <option value="GN">Guinea</option>
+                            <option value="GW">Guinea-bissau</option>
+                            <option value="GY">Guyana</option>
+                            <option value="HT">Haiti</option>
+                            <option value="HM">Heard Island and Mcdonald Islands</option>
+                            <option value="VA">Holy See (Vatican City State)</option>
+                            <option value="HN">Honduras</option>
+                            <option value="HK">Hong Kong</option>
+                            <option value="HU">Hungary</option>
+                            <option value="IS">Iceland</option>
+                            <option value="IN">India</option>
+                            <option value="ID">Indonesia</option>
+                            <option value="IR">Iran, Islamic Republic of</option>
+                            <option value="IQ">Iraq</option>
+                            <option value="IE">Ireland</option>
+                            <option value="IM">Isle of Man</option>
+                            <option value="IL">Israel</option>
+                            <option value="IT">Italy</option>
+                            <option value="JM">Jamaica</option>
+                            <option value="JP">Japan</option>
+                            <option value="JE">Jersey</option>
+                            <option value="JO">Jordan</option>
+                            <option value="KZ">Kazakhstan</option>
+                            <option value="KE">Kenya</option>
+                            <option value="KI">Kiribati</option>
+                            <option value="KP">Korea, Democratic People's Republic of</option>
+                            <option value="KR">Korea, Republic of</option>
+                            <option value="KW">Kuwait</option>
+                            <option value="KG">Kyrgyzstan</option>
+                            <option value="LA">Lao People's Democratic Republic</option>
+                            <option value="LV">Latvia</option>
+                            <option value="LB">Lebanon</option>
+                            <option value="LS">Lesotho</option>
+                            <option value="LR">Liberia</option>
+                            <option value="LY">Libyan Arab Jamahiriya</option>
+                            <option value="LI">Liechtenstein</option>
+                            <option value="LT">Lithuania</option>
+                            <option value="LU">Luxembourg</option>
+                            <option value="MO">Macao</option>
+                            <option value="MK">Macedonia, The Former Yugoslav Republic of</option>
+                            <option value="MG">Madagascar</option>
+                            <option value="MW">Malawi</option>
+                            <option value="MY">Malaysia</option>
+                            <option value="MV">Maldives</option>
+                            <option value="ML">Mali</option>
+                            <option value="MT">Malta</option>
+                            <option value="MH">Marshall Islands</option>
+                            <option value="MQ">Martinique</option>
+                            <option value="MR">Mauritania</option>
+                            <option value="MU">Mauritius</option>
+                            <option value="YT">Mayotte</option>
+                            <option value="MX">Mexico</option>
+                            <option value="FM">Micronesia, Federated States of</option>
+                            <option value="MD">Moldova, Republic of</option>
+                            <option value="MC">Monaco</option>
+                            <option value="MN">Mongolia</option>
+                            <option value="ME">Montenegro</option>
+                            <option value="MS">Montserrat</option>
+                            <option value="MA">Morocco</option>
+                            <option value="MZ">Mozambique</option>
+                            <option value="MM">Myanmar</option>
+                            <option value="NA">Namibia</option>
+                            <option value="NR">Nauru</option>
+                            <option value="NP">Nepal</option>
+                            <option value="NL">Netherlands</option>
+                            <option value="AN">Netherlands Antilles</option>
+                            <option value="NC">New Caledonia</option>
+                            <option value="NZ">New Zealand</option>
+                            <option value="NI">Nicaragua</option>
+                            <option value="NE">Niger</option>
+                            <option value="NG">Nigeria</option>
+                            <option value="NU">Niue</option>
+                            <option value="NF">Norfolk Island</option>
+                            <option value="MP">Northern Mariana Islands</option>
+                            <option value="NO">Norway</option>
+                            <option value="OM">Oman</option>
+                            <option value="PK">Pakistan</option>
+                            <option value="PW">Palau</option>
+                            <option value="PS">Palestinian Territory, Occupied</option>
+                            <option value="PA">Panama</option>
+                            <option value="PG">Papua New Guinea</option>
+                            <option value="PY">Paraguay</option>
+                            <option value="PE">Peru</option>
+                            <option value="PH">Philippines</option>
+                            <option value="PN">Pitcairn</option>
+                            <option value="PL">Poland</option>
+                            <option value="PT">Portugal</option>
+                            <option value="PR">Puerto Rico</option>
+                            <option value="QA">Qatar</option>
+                            <option value="RE">Reunion</option>
+                            <option value="RO">Romania</option>
+                            <option value="RU">Russian Federation</option>
+                            <option value="RW">Rwanda</option>
+                            <option value="SH">Saint Helena</option>
+                            <option value="KN">Saint Kitts and Nevis</option>
+                            <option value="LC">Saint Lucia</option>
+                            <option value="PM">Saint Pierre and Miquelon</option>
+                            <option value="VC">Saint Vincent and The Grenadines</option>
+                            <option value="WS">Samoa</option>
+                            <option value="SM">San Marino</option>
+                            <option value="ST">Sao Tome and Principe</option>
+                            <option value="SA">Saudi Arabia</option>
+                            <option value="SN">Senegal</option>
+                            <option value="RS">Serbia</option>
+                            <option value="SC">Seychelles</option>
+                            <option value="SL">Sierra Leone</option>
+                            <option value="SG">Singapore</option>
+                            <option value="SK">Slovakia</option>
+                            <option value="SI">Slovenia</option>
+                            <option value="SB">Solomon Islands</option>
+                            <option value="SO">Somalia</option>
+                            <option value="ZA">South Africa</option>
+                            <option value="GS">South Georgia and The South Sandwich Islands</option>
+                            <option value="ES">Spain</option>
+                            <option value="LK">Sri Lanka</option>
+                            <option value="SD">Sudan</option>
+                            <option value="SR">Suriname</option>
+                            <option value="SJ">Svalbard and Jan Mayen</option>
+                            <option value="SZ">Swaziland</option>
+                            <option value="SE">Sweden</option>
+                            <option value="CH">Switzerland</option>
+                            <option value="SY">Syrian Arab Republic</option>
+                            <option value="TW">Taiwan, Province of China</option>
+                            <option value="TJ">Tajikistan</option>
+                            <option value="TZ">Tanzania, United Republic of</option>
+                            <option value="TH">Thailand</option>
+                            <option value="TL">Timor-leste</option>
+                            <option value="TG">Togo</option>
+                            <option value="TK">Tokelau</option>
+                            <option value="TO">Tonga</option>
+                            <option value="TT">Trinidad and Tobago</option>
+                            <option value="TN">Tunisia</option>
+                            <option value="TR">Turkey</option>
+                            <option value="TM">Turkmenistan</option>
+                            <option value="TC">Turks and Caicos Islands</option>
+                            <option value="TV">Tuvalu</option>
+                            <option value="UG">Uganda</option>
+                            <option value="UA">Ukraine</option>
+                            <option value="AE">United Arab Emirates</option>
+                            <option value="GB">United Kingdom</option>
+                            <option value="US">United States</option>
+                            <option value="UM">United States Minor Outlying Islands</option>
+                            <option value="UY">Uruguay</option>
+                            <option value="UZ">Uzbekistan</option>
+                            <option value="VU">Vanuatu</option>
+                            <option value="VE">Venezuela</option>
+                            <option value="VN">Viet Nam</option>
+                            <option value="VG">Virgin Islands, British</option>
+                            <option value="VI">Virgin Islands, U.S.</option>
+                            <option value="WF">Wallis and Futuna</option>
+                            <option value="EH">Western Sahara</option>
+                            <option value="YE">Yemen</option>
+                            <option value="ZM">Zambia</option>
+                            <option value="ZW">Zimbabwe</option>
+                        </select>
+                        <span id="countryMessage"></span>
+                    </div>
+                    <!-- message area -->
+                    <div class="lessMargin clearBoth">
+                        <label class="labelTitle goldText marginRight">Message:</label>
+                        <textarea></textarea>
+                    </div>
+                    <!-- buttons -->
+                    <button id="submitForm" class="buttonOne buttonGold goldBg textCaps marginTop marginBottom" type="submit" value="submit">Submit</button>
+                    <button id="resetForm" class="buttonOne buttonPurple darkVBg textCaps marginTop marginBottom" type="reset" value="submit">Clear</button>
+                 </form>
+               </div>
+               <!-- side information bar -->
+               <div class="sideBodyGrid floatLeft noMarginRight">
+                   <!-- Google Maps -->
+                   <iframe class="noBorder" width="340" height="200" src="https://www.google.com/maps/embed/v1/place?q=152%20Quay%20Street%2C%20Auckland%2C%20New%20Zealand&key=AIzaSyB4usf1AqJgkB8oKTWys4Xd4bCYJw-pJ9g"></iframe>
+                   <!-- address -->
+                   <h3 class="textCaps textDarkV noMarginBottom">Address</h3>
+                   <p>Princess Wharf, 152 Quay Street <br />Auckland 1010<br />New Zealand</p>   
+                   <!-- telephone -->
+                   <h3 class="textCaps textDarkV noMarginBottom">Telephone</h3>
+                   <p>0800 782 548</p>
+                    <!-- email -->
+                   <h3 class="textCaps textDarkV noMarginBottom">Email</h3>
+                   <p>auckland@goldwayinternational.com</p>
+                   <!-- social media icons -->
+                   <span class="circle circle2 socialMargin">
+                        <a href="http://facebook.com" class="textGold noUnderline" target="_blank"><i class="fa fa-facebook fa-2x socialPos fbPos"></i></a>
+                    </span>
+                    <span class="circle circle2 socialMargin">
+                        <a href="http://twitter.com" class="textGold noUnderline" target="_blank"><i class="fa fa-twitter fa-2x socialPos twitterPos"></i></a>
+                    </span>
+                    <span class="circle circle2 socialMargin">
+                        <a href="http://google.com" class="textGold noUnderline" target="_blank"><i class="fa fa-google-plus fa-2x socialPos gPos"></i></a>
+                    </span>
+               </div>
+            </div>
+        </div>
+    </div>
+     <!-- world map starts-->
+    <div id="worldMapContainer" class="lightVBg clearBoth paddingTop">
+        <div class="containerCenter">
+           <div class="containerWrapper selfClear">
+               <h2 class="alignCenter textDarkV textCaps">Goldway International Hotel Locator</h2>
+               <!-- worldmap hot spots -->
+               <div class="mapWrapper centerPosition">
+               <!-- worldmap images -->
+                   <!-- North american image -->
+                   <img id="imageMapNA" class="floatLeft noBorder" src="images/worldMapNA.jpg" alt="north-america-region" width="353" height="242" usemap="#worldMapNA" />
+                   <!-- Europe image -->
+                   <img id="imageMapEU" class="floatLeft noBorder" src="images/worldMapEU.jpg" alt="europe-region" width="166" height="500" usemap="#worldMapEU" />            
+                   <!-- asia image -->
+                   <img id="imageMapAS" class="floatLeft noBorder" src="images/worldMapAS.jpg" alt="asia-region" width="331" height="310" usemap="#worldMapAS" />
+                   <!-- south america image -->
+                   <img id="imageMapSA" class="posSA clearBoth noBorder" src="images/worldMapSA.jpg" alt="south-america-region" width="353" height="258" usemap="#worldMapSA" />
+                   <!-- oceania image -->
+                   <img id="imageMapOC" class="posOC noBorder" src="images/worldMapOC.jpg" alt="oceania-region" width="331" height="190" usemap="#worldMapOC" />
+                </div>
+           </div>
+        </div>
+    </div>
+    <!-- america coordinates -->
+    <map name="worldMapNA" id="worldMapNA">
+        <area shape="rect" coords="65,56,300,235" href="" alt="north-america-coordinates" title="North America" >
+    </map>
+    <!-- europe -->
+    <map name="worldMapEU" id="worldMapEU">
+        <area shape="rect" coords="27,83,144,192" href="" alt="europe-region-coordinates" title="Europe" >
+    </map>
+    <!-- asia -->
+    <map name="worldMapAS" id="worldMapAS">
+        <area shape="rect" coords="0,122,296,310" href="" alt="asia-region-coordinates" title="Asia" >
+    </map>
+    <!-- south america -->
+    <map name="worldMapSA" id="worldMapSA">
+        <area shape="rect" coords="200,0,330,209" href="" alt="south-america-coordinates" title="South America" >
+    </map>
+    <!-- oceania -->
+    <map name="worldMapOC" id="worldMapOC">
+        <area shape="rect" coords="154,0,318,114" href="" alt="oceania-coordinates" title="Oceania" >
+    </map>
+    <!-- newsletter signup section starts-->
+    <div id="newsletterContainer" class="silverBg clearBoth">
+        <div class="containerCenter">
+           <div class="containerWrapper selfClear">
+                <!-- newsletter form -->
+                <h3 class="textCaps textGold floatLeft">Sign up to receive latest offers:</h3>
+                <form action="http://google.com" method="post" id="newsletterSignUp">
+                   <input class="newsletterGrid floatLeft" type="text" name="email" id="emailNews" placeholder="Enter email here"/>
+                   <span id="emailNewsMessage"></span>             
+                   <button id="newsSubmit" class="buttonOne buttonGold goldBg textCaps" type="submit" value="subscribe">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- footer section starts -->
+    <div id="footerContainer"  class="darkVBg">
+        <div class="containerCenter">
+           <div class="containerWrapper">
+               <footer id="mainFooter" class="alignCenter textWhite">
+                   <ul>
+                       <li>
+                           <!-- address line -->
+                           <span class="marginRight">Princes Wharf 152 Quay Street, Auckland, 1010, New Zealand</span>
+                           <!-- social media icons -->
+                           <span class="circle marginRight">
+                               <a href="http://facebook.com" class="noUnderline" target="_blank"><i class="fa fa-facebook fa-2x socialPos"></i></a>
+                           </span>
+                           <span class="circle marginRight">
+                               <a href="http://twitter.com" class="noUnderline" target="_blank"><i class="fa fa-twitter fa-2x socialPos"></i></a>
+                           </span>
+                           <span class="circle marginRight">
+                                <a href="http://google.com" class="noUnderline" target="_blank"><i class="fa fa-google-plus fa-2x socialPos"></i></a>
+                           </span>
+                           <!-- contact line -->
+                           <span class="marginRight">
+                               T: <a href="tel: 0800 782 548" class="noUnderline">0800 782 548</a>
+                           </span>
+                           <span class="marginRight">
+                               E: <a href="mailto: auckland@goldwayinternational.com" class="noUnderline">auckland@goldwayinternational.com</a>
+                           </span>
+                      </li>
+                   </ul>
+                   <hr />
+                   <!-- navigation footer -->
+                   <ul>
+                       <li class="textCaps headingFont">
+                           <span class="marginRight"><a href="rooms.html" class="noUnderline">Rooms</a></span>
+                           <span class="marginRight"><a href="facilities.html" class="noUnderline">Facilities</a></span>
+                           <span class="marginRight"><a href="dining.html" class="noUnderline">Dining</a></span>
+                           <span class="marginRight"><a href="contact.html" class="noUnderline">Contact</a></span>
+                           <span class="marginRight"><a href="reservations.html" class="noUnderline">Reservations</a></span>
+                       </li>
+                       <li class="finePrint">© Goldway International Hotels. All Rights Reserved 2015</li>
+                       <li class="finePrint">ARTesano Web Development &amp; Design</li>
+                   </ul>
+                 
+               </footer>
+           </div>
+        </div>
+    </div>
+    <!-- world map popup boxes -->
+    <!-- north america -->
+    <div id="overlayNorthAmerica" class="hide">
+        <div class="modalContainer modalContainer2 whiteBg">
+            <a href="" id="closeButton" class="closeButton goldBg textCaps headingFont noUnderline textWhite">[X] Close</a>
+            <h3 class="textDarkV textCaps alignCenter">North America</h3>
+            <h4 class="textGold alignCenter">1 866 866 8086</h4>
+            <p class="alignCenter">Please dial the above number for the following countries:</p>
+            <div class="popUpListContainer containerCenter">
+                <ul class="noMarginTop">
+                    <li>Canada</li>
+                    <li>Puerto Rico</li>
+                    <li>United States of America</li>
+                    <li>US Virgin Islands</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- south america -->
+    <div id="overlaySouthAmerica" class="hide">
+        <div class="modalContainer modalContainer2 whiteBg">
+            <a href="" class="closeButton goldBg textCaps headingFont noUnderline textWhite">[X] Close</a>
+            <h3 class="textDarkV textCaps alignCenter">South America</h3>
+            <p class="alignCenter">Please dial the appropriate numbers for the following countries:</p>
+            <div class="popUpListContainer containerCenter">
+                <ul class="noMarginTop">
+                    <li>Brazil Sao Paulo: 0800 119 131</li>
+                    <li>Chile: 800 530 061</li>
+                    <li>Colombia: (57-1) 294 9570</li>
+                    <li>Mexico: 800 903 9500</li>
+                    <li>Venezuela: 0800 100 6814</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- europe -->
+    <div id="overlayEurope" class="hide">
+        <div class="modalContainer modalContainer2 whiteBg">
+            <a href="" class="closeButton goldBg textCaps headingFont noUnderline textWhite">[X] Close</a>
+            <h3 class="textDarkV textCaps alignCenter">Europe | MIDDLE EAST | NORTH AFRICA</h3>
+            <h4 class="textGold alignCenter">00 800 86 86 8086</h4>
+            <p class="alignCenter">Please dial toll free the above number for the following European countries and cities: </p>
+            <div class="popUpListContainer containerCenter selfClear">
+                <ul class="noMarginTop floatLeft">
+                    <li>Austria </li>
+                    <li>Barcelona</li>
+                    <li>Belgium</li>
+                    <li>Denmark</li>
+                    <li>Finland</li>
+                    <li>Germany</li>
+                    <li>Ireland</li>
+                </ul>
+                <ul class="noMarginTop floatLeft">
+                    <li>Italy</li>
+                    <li>Madrid</li>
+                    <li>Netherlands</li>
+                    <li>Norway</li>
+                    <li>Portugal</li>
+                    <li>Sweden</li>
+                    <li>Switzerland</li>
+                </ul>
+                <p class="clearBoth marginLeft">For France and the UK, please dial:</p>
+                <ul>
+                    <li>France: 0800 90 95 86</li>
+                    <li>United Kingdom: 0 800 41 47 4 1</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- asia -->
+    <div id="overlayAsia" class="hide">
+        <div class="modalContainer modalContainer2 whiteBg">
+            <a href="" class="closeButton goldBg textCaps headingFont noUnderline textWhite">[X] Close</a>
+            <h3 class="textDarkV textCaps alignCenter">Asia Pacific</h3>
+            <p class="alignCenter">Please dial the appropriate numbers for the following countries:</p>
+            <div class="popUpListContainer containerCenter selfClear">
+                <ul class="noMarginTop">
+                    <li>Hong Kong: 800 96 2541</li>
+                    <li>Japan: 0120 500 174</li>
+                    <li>Singapore: 65 6735 7575 </li>
+                    <li>Thailand: 001 800 65 6544</li>
+                    <li>Beijing: 10 800 852 0673</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- oceania -->
+    <div id="overlayOceania" class="hide">
+        <div class="modalContainer modalContainer2 whiteBg">
+            <a href="" class="closeButton goldBg textCaps headingFont noUnderline textWhite">[X] Close</a>
+            <h3 class="textDarkV textCaps alignCenter">Oceania</h3>
+            <p class="alignCenter">Please dial the appropriate numbers for the following countries:</p>
+            <div class="popUpListContainer containerCenter selfClear">
+                <ul class="noMarginTop">
+                    <li>Australia: 1 800 147 803</li>
+                    <li>New Zealand: 0800 782 548</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/jsFormValidator.js"></script>
+    <script type="text/javascript" src="js/javascript.js"></script>
+    <script type="text/javascript" src="js/jsWorldMap.js"></script>
+</body>
+</html>
